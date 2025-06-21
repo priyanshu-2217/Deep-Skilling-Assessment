@@ -19,4 +19,5 @@ for more detail:
 
 
 🧠 Conclusion:
+You can use both to find or search but in linear search you have to check each element whereas
 Binary search is more efficient for large datasets but needs sorting.
