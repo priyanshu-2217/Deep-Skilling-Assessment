@@ -1,6 +1,6 @@
 package Employee_Management;
 
-public class ManageEmployee{
+public class  ManageEmployee{
     static Employee[] employees = new Employee[10];
     static int count = 0;
 

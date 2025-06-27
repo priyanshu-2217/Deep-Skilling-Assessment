@@ -1,6 +1,6 @@
 package Financial_Forecasting;
 
-public class Forecast {
+public class  Forecast {
 
     // Recursive method to calculate future value
     public static double predictValue(double currentValue, double growthRate, int years) {
