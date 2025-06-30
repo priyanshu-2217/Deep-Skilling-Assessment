@@ -1,5 +1,8 @@
-package src.test.java.Junit_Spring_test;
+package Junit_Spring_test;
 
+import org.example.Mockito_mockdependencies.User;
+import org.example.Mockito_mockdependencies.UserRepository;
+import org.example.Mockito_mockdependencies.UserService;
 import org.junit.jupiter.api.*;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.ValueSource;
@@ -9,6 +12,8 @@ import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.boot.test.mock.mockito.MockBean;
 import org.springframework.http.MediaType;
 import org.springframework.test.web.servlet.*;
+
+import java.util.NoSuchElementException;
 
 import static org.junit.jupiter.api.Assertions.*;
 import static org.junit.jupiter.api.Assertions.assertThrows;
