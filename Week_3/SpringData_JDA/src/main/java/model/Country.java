@@ -1,4 +1,4 @@
-package Week_3.Spring_JDA.src.java.model;
+package Week_3.SpringData_JDA.src.main.java.model;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
@@ -16,7 +16,13 @@ public class Country {
     @Column(name = "co_name")
     private String name;
 
-    // ✅ Required: Getters and Setters
+    public Country() {}
+
+    public Country(String code, String name) {
+        this.code = code;
+        this.name = name;
+    }
+
     public String getCode() {
         return code;
     }
@@ -30,14 +36,6 @@ public class Country {
     }
 
     public void setName(String name) {
-        this.name = name;
-    }
-
-    // ✅ Optional: Constructor & toString()
-    public Country() {}
-
-    public Country(String code, String name) {
-        this.code = code;
         this.name = name;
     }
 
