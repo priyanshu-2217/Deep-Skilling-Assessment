@@ -1,0 +1,35 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       https://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="skill1" class="com.cognizant.Spring_learn.model.Skill">
+        <property name="id" value="1"/>
+        <property name="name" value="HTML"/>
+    </bean>
+
+    <bean id="department1" class="com.cognizant.Spring_learn.model.Department">
+        <property name="id" value="1"/>
+        <property name="name" value="HR"/>
+    </bean>
+
+    <bean id="emp1" class="com.cognizant.Spring_learn.model.Employee">
+        <property name="id" value="1"/>
+        <property name="name" value="John"/>
+        <property name="department" ref="department1"/>
+        <property name="skills">
+            <list>
+                <ref bean="skill1"/>
+            </list>
+        </property>
+    </bean>
+
+    <bean id="employeeList" class="java.util.ArrayList">
+        <constructor-arg>
+            <list>
+                <ref bean="emp1"/>
+            </list>
+        </constructor-arg>
+    </bean>
+
+</beans>
