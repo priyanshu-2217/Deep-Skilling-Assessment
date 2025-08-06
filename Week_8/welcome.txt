@@ -1,0 +1,10 @@
+As you can see this on github
+I have used the following commands for this:
+git init: To initialize
+
+git add:  Add it to the stage area
+
+git commit: To add a message
+
+git push: To finally push it to the repo
+
