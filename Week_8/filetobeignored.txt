@@ -1,0 +1,5 @@
+This file is going to be ignored .
+How to do that ?
+1. create a gitignore file
+2. put the name of the file to be ignored into that
+3. Then you can push as per requirement , and it won't be pushed to the repo.
