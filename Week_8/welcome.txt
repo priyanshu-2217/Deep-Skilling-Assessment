@@ -1,4 +1,4 @@
-As you can see this on github
+As you can see this on gitHub
 I have used the following commands for this:
 git init: To initialize
 
